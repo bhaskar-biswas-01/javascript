@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Preview</title>
+  <style>
+    #image {
+      height: 700px;
+      width: 1000px;
+      border: 1px solid hsl(0, 95%, 48%);
+      text-align: center;
+      line-height: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .preview {
+      width: 300px;
+      margin: 5px;
+      border: 1px solid hwb(109 4% 10%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="image">Hover over an image below to display here.</div>
+
+  <img class="preview" src="https://tse1.mm.bing.net/th/id/OIP.n6Z1x9tMUm5KF60kVR-vaQHaEK?cb=iwp1&rs=1&pid=ImgDetMain" alt="Spider MAN" onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" src="https://media.gq.com.mx/photos/5ffb9ad7cbc9d2690de1644d/16:9/w_2560,c_limit/loki-segunda-temporada.jpg" alt="LOKI" onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" src="https://images.hdqwalls.com/wallpapers/vision-avengers-endgame-xc.jpg" alt="VISION" onmouseover="upDate(this)" onmouseout="undo()">
+
+  <script src="script.js"></script>
+</body>
+</html>
